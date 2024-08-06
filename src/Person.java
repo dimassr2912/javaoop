@@ -10,10 +10,10 @@ class Person {
     }
 
     // Constructor
-    Person(String paramName, String paramAddress) {
-        name = paramName;
-        address = paramAddress;
-    }
+    //Person(String paramName, String paramAddress) {
+    //    name = paramName;
+    //    address = paramAddress;
+    //}
 
     // Constructor overloading
     Person(String paramName) {
@@ -24,4 +24,24 @@ class Person {
     Person() {
         this(null);
     }
+
+    // Variable shadowing
+    // Person(String name){
+    // name = name; Akan akses name bukan yang di field, karena tertutupi
+    // }
+
+    // This (Solusi variable shadowing)
+    Person(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    void sayHello2(String name) {
+        System.out.println("Hello " + name + "My name is " + this.name);
+    }
+
 }
+/**
+ * This digunakan untuk akses object saat ini
+
+ */

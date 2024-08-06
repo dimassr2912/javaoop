@@ -13,6 +13,7 @@ public class PersonApp {
 
         person1.sayHello("Rama1");
         person2.sayHello("Rama2");
+        person2.sayHello2("Rama2");
     }
 }
 /**

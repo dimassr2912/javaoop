@@ -1,0 +1,5 @@
+class VicePresident extends Manager{
+
+}
+
+

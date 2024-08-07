@@ -42,6 +42,8 @@ class Person {
 
 }
 /**
+ * Constructor: Method yang pertama kali dipanggil saat object dibuat
+ *  Tidak memiliki void dan return value
+ * Constructor overloading: Membuat lebih dari 1 constructor dengan nama yang sama, tetapi beda paramater
  * This digunakan untuk akses object saat ini
-
  */
